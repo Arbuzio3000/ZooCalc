@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Калькулятор сухого корма</h1>
+        <div class="calculator__content">
+            <div class="calculator__img">
+                <img src="img/product.png" alt="">
+            </div>
+            <div class="calculator__form">
+                <form id="regForm" action="">
+                    <div class="tab tab_age">Укажите возраст собаки<br>
+                        <select id="select-age">
+                            <option label="Возраст собаки..." value="1" selected></option>
+                            <option value=">6"> Возраст > 6 месяцев</option>
+                            <option value="<6"> Возраст < 6 месяцев</option>
+                        </select>
+                    </div>
+                    
+                    <div class="tab tab_weight">Вес собаки<br>
+                        <p><input id="select-weight" placeholder="Укажите вес собаки" type="number"></p>
+                    </div>
+
+                    <div class="tab tab_class">Выберете класс питания<br>
+                        <select id="select-class">
+                            <option label="Класс питания..." value="1" selected></option>
+                            <option value="Economy">Эконом</option>
+                            <option value="Medium">Медиум</option>
+                            <option value="Premium">Премиум</option>
+                        </select>
+                    </div>
+                    
+                    <div class="tab tab_economy_main">Основное мясо в рационе<br>
+                        <select id="select-economy-main">
+                            <option label="Выбрать..." value="0" selected></option>
+                            <option value="1">Баранина обрезь 70/30</option>
+                            <option value="2">Говядина обрезь 80/20</option>
+                        </select>
+                    </div>
+
+                    <div class="tab tab_medium_main">Основное мясо в рационе<br>
+                        <select id="select-medium-main">
+                            <option label="Выбрать..." value="0" selected></option>
+                            <option value="1">Баранина обрезь 90/10</option>
+                            <option value="2">Говядина подъязычная</option>
+                            <option value="3">Курица (филе грудки)</option>
+                        </select>
+                    </div>
+
+                    <div class="tab tab_premium_main">Основное мясо в рационе<br>
+                        <select id="select-premium-main">
+                            <option label="Выбрать..." value="0" selected></option>
+                            <option value="1">Кролик (филе грудки)</option>
+                            <option value="2">Говядина (щека)</option>
+                            <option value="3">Говядина лопатка</option>
+                            <option value="4">Индейка (филе грудки)</option>
+                        </select>
+                    </div>
+
+                    
+                    <!-- <div style="overflow:auto;">
+                      <div style="float:right;">
+                        <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                        <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                      </div>
+                    </div> -->
+                    
+                    <!-- Circles which indicates the steps of the form: -->
+                    <!-- <div style="text-align:center;margin-top:40px;">
+                      <span class="step"></span>
+                      <span class="step"></span>
+                      <span class="step"></span>
+                      <span class="step"></span>
+                    </div> -->
+                    
+                    </form>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

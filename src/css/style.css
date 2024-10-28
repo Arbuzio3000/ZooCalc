@@ -1,0 +1,94 @@
+.calculator{
+    width: 1200px;
+    margin: 0 auto;
+}
+.calculator__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Два столбца с равной шириной */
+    grid-gap: 10px;
+}
+
+.calculator__img img{
+    width: 100%;
+}
+
+.calculator__form{
+    width: 100%;
+    height: 100%;
+}
+#regForm {
+    background-color: #ffffff;
+    margin: 0px auto;
+    padding: 0px 40px;
+    width: 70%;
+    min-width: 300px;
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+  }
+  
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+  .tab{
+    margin: 10px 0;;
+  }
+  .tab_class, .tab_weight, .tab_economy_main, .tab_medium_main, .tab_premium_main{
+    display: none;
+  }
+
+  .tab_age {
+    display: block;
+  }
+
+  
+  /* Make circles that indicate the steps of the form: */
+  .step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+  }
+  
+  /* Mark the active step: */
+  .step.active {
+    opacity: 1;
+  }
+  
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+    background-color: #4CAF50;
+  }
+
+  select {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Скругленные углы */
+    font-size: 16px;
+    color: #333;
+    background-color: #f0f0f0; /* Более светлый фон */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Тень */
+    appearance: none; /* Скрывает стандартную стрелку вниз (для некоторых браузеров) */
+  }
+  
+  select::-ms-expand {
+    display: none; /* Скрывает стрелку вниз в Internet Explorer и Edge */
+  }
+  
+  select::-ms-value {
+    color: #333; /* Цвет текста выбранного значения в IE/Edge */
+  }
